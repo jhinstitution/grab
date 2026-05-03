@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مطعم Grab & Go – الوجبات</title>
+  <link rel="stylesheet" href="Style.css" />
+    <link rel="icon" href="logo/logo.jpg" />
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-brand"><span class="dot"></span>Grab & Go RESTAURANT</div>
+    <ul class="navbar-nav">
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="AboutUs.html">من نحن</a></li>
+      <li><a href="Meals.html" class="active">الوجبات</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-banner">
+    <div class="hero-tag" style="display:inline-block;margin-bottom:14px;">قائمة الوجبات</div>
+    <h2>اختر <em>وجبتك</em> المفضلة</h2>
+
+  </div>
+
+  <div class="section">
+
+    <!-- ══ MEALS  ══ -->
+    <div class="table-wrap">
+      <table id="meals-table">
+        <thead>
+          <tr>
+            <th>الرمز</th>
+            <th>الوجبة</th>
+            <th>الصورة</th>
+            <th>السعر</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+          <tr>
+            <td class="meal-code">SF-001</td>
+            <td class="meal-name">دجاج Grab & Go مشوي بالأعشاب لشخصين</td>
+            <td><img class="meal-img"
+                src="meals/chicken herbs.jpg"
+                alt="دجاج مشوي" /></td>
+            <td class="price-cell">85,000 ل.س<input type="hidden" class="meal-price-val" value="85000" /></td>
+            <td><button class="btn-detail" data-target="d-sf002">إظهار</button></td>
+            <td><input type="checkbox" class="meal-checkbox" /></td>
+          </tr>
+          <tr class="detail-row" id="d-sf002">
+            <td colspan="6">
+              <div class="detail-box">
+                <img
+                  src="meals/chicken herbs.jpg"
+                  alt="دجاج مشوي" />
+                <div class="detail-text">
+                  <h5> دجاج مشوي بالأعشاب – SF-001</h5>
+                  <p><strong>المطبخ:</strong> السّوري</p>
+                  <p><strong>تصنيف الطعام:</strong>دجاج </p>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>نصف دجاجة مقطعة طازجة</li>
+                    <li>إكليل الجبل والزعتر والريحان</li>
+                    <li>زيت زيتون بكر وعصير ليمون طازج</li>
+                    <li>ثوم وبهارات المشاوي</li>
+                    <li>يُقدَّم مع الأرز المبهّر والسلطة الخضراء</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ═══ SF-002 ═══ -->
+          <tr>
+            <td class="meal-code">SF-002</td>
+            <td class="meal-name">كباب  مع المقبلات لشخصين</td>
+            <td><img class="meal-img"
+                src="meals/kabab.jpg"
+                alt="كباب مشكل" /></td>
+            <td class="price-cell">120,000 ل.س<input type="hidden" class="meal-price-val" value="120000" /></td>
+            <td><button class="btn-detail" data-target="d-sf003">إظهار</button></td>
+            <td><input type="checkbox" class="meal-checkbox" /></td>
+          </tr>
+          <tr class="detail-row" id="d-sf003">
+            <td colspan="6">
+              <div class="detail-box">
+                <img
+                  src="meals/kabab.jpg"
+                  alt="كباب مشكل" />
+                <div class="detail-text">
+                  <h5> كباب مشكل – SF-002</h5>
+                  <p><strong>المطبخ:</strong>شامي </p>
+                  <p><strong>تصنيف الطعام:</strong> مشاوي</p>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>كباب لحم ضأن وعجل مفروم</li>
+                    <li>كباب دجاج بالأعشاب</li>
+                    <li>حمص بالطحينة وتبولة طازجة</li>
+                    <li>خبز تنور طازج ومخللات</li>
+                    <li>مشروب بارد مُرفق</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ═══ SF-003 ═══ -->
+          <tr>
+            <td class="meal-code">SF-003</td>
+            <td class="meal-name">فتوش شامي</td>
+            <td><img class="meal-img"
+                src="meals/fatush.jpg"
+                alt="فتوش" /></td>
+            <td class="price-cell">45,000 ل.س<input type="hidden" class="meal-price-val" value="45000" /></td>
+            <td><button class="btn-detail" data-target="d-sf004">إظهار</button></td>
+            <td><input type="checkbox" class="meal-checkbox" /></td>
+          </tr>
+          <tr class="detail-row" id="d-sf004">
+            <td colspan="6">
+              <div class="detail-box">
+                <img
+                  src="meals/fatush.jpg"
+                  alt="فتوش" />
+                <div class="detail-text">
+                  <h5> فتوش شامي – SF-003</h5>
+                  <p><strong>المطبخ:</strong> لبناني-شامي</p>
+                  <p><strong>تصنيف الطعام:</strong> سلطات</p>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>خضروات طازجة موسمية (طماطم، خيار، فجل)</li>
+                    <li>خبز محمص مقطّع</li>
+                    <li>دبس الرمان وزيت زيتون</li>
+                    <li>نعنع طازج وسماق</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ═══ SF-004 ═══ -->
+          <tr>
+            <td class="meal-code">SF-004</td>
+            <td class="meal-name">منسف لحم بالجميد لأربعة أشخاص</td>
+            <td><img class="meal-img"
+                src="meals/mansaf.jpg" 
+                alt="منسف" /></td>
+            <td class="price-cell">280,000 ل.س<input type="hidden" class="meal-price-val" value="280000" /></td>
+            <td><button class="btn-detail" data-target="d-sf005">إظهار</button></td>
+            <td><input type="checkbox" class="meal-checkbox" /></td>
+          </tr>
+          <tr class="detail-row" id="d-sf005">
+            <td colspan="6">
+              <div class="detail-box">
+                <img src="meals/mansaf.jpg"
+                  alt="منسف" />
+                <div class="detail-text">
+                  <h5> منسف بالجميد – SF-004</h5>
+                  <p><strong>المطبخ:</strong> أردني-شامي</p>
+                  <p><strong>تصنيف الطعام:</strong> أطباق رئيسية</p>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>2 كغ لحم ضأن طازج</li>
+                    <li>صلصة الجميد الأصلية (اللبن المجفف)</li>
+                    <li>أرز بسمتي بالكرمة</li>
+                    <li>لوز وصنوبر مقلي بالسمن</li>
+                    <li>خبز شراك طازج</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ═══ SF-005 ═══ -->
+          <tr>
+            <td class="meal-code">SF-005</td>
+            <td class="meal-name">بيتزا مارغريتا بالجبن الثلاثي</td>
+            <td><img class="meal-img"
+                src="meals/pizza.jpg"
+                alt="بيتزا" /></td>
+            <td class="price-cell">75,000 ل.س<input type="hidden" class="meal-price-val" value="75000" /></td>
+            <td><button class="btn-detail" data-target="d-sf006">إظهار</button></td>
+            <td><input type="checkbox" class="meal-checkbox" /></td>
+          </tr>
+          <tr class="detail-row" id="d-sf006">
+            <td colspan="6">
+              <div class="detail-box">
+                <img
+                  src="meals/pizza.jpg"
+                  alt="بيتزا" />
+                <div class="detail-text">
+                  <h5>🍕 بيتزا مارغريتا – SF-005</h5>
+                  <p><strong>المطبخ:</strong> إيطالي</p>
+                  <p><strong>تصنيف الطعام:</strong> بيتزا</p>
+                  <p><strong>المكونات:</strong></p>
+                  <ul>
+                    <li>عجينة إيطالية طازجة محضّرة يومياً</li>
+                    <li>صلصة طماطم طبيعية</li>
+                    <li>جبن موزاريلا، شيدر، وبارميزان</li>
+                    <li>ريحان طازج وزيت زيتون بكر</li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <!-- end table- -->
+
+    <!-- ══ CONTINUE ══ -->
+    <div class="continue-wrap">
+      <button id="btn-continue" class="btn btn-red" style="font-size:var(--fs-md);padding:16px 56px;">
+        متابعة &larr;
+      </button>
+    </div>
+
+    <!-- ══ ORDER FORM ══ -->
+    <div id="order-form">
+      <h3> بيانات الطلب</h3>
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label for="inp-name">الاسم الكامل (بالإنكليزية)</label>
+          <input type="text" id="inp-name" placeholder="مثال: Ahmad Mohammad" />
+          <span class="err-msg" id="err-name"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="inp-account">رقم الحساب المصرفي <span style="color:var(--red)">*</span></label>
+          <input type="text" id="inp-account" placeholder="6 أرقام (مثال: 055555)" maxlength="6" />
+          <span class="err-msg" id="err-account"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="inp-date">تاريخ الطلب (yyyy-mm-dd)</label>
+          <input type="text" id="inp-date" placeholder="مثال: 2026-05-10" />
+          <span class="err-msg" id="err-date"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="inp-mobile">رقم الموبايل (Syriatel / MTN)</label>
+          <input type="text" id="inp-mobile" placeholder="مثال: 0991234567" maxlength="10" />
+          <span class="err-msg" id="err-mobile"></span>
+        </div>
+
+      </div>
+
+      <p class="form-note"><span>*</span> رقم الحساب المصرفي واجب الإدخال – باقي الحقول اختيارية</p>
+
+      <div class="form-actions">
+        <button id="btn-submit" class="btn btn-red" style="font-size:var(--fs-md);padding:14px 60px;">
+          إرسال الطلب ✓
+        </button>
+      </div>
+    </div>
+
+  </div><!-- end section -->
+
+  <!-- ══ ORDER MODAL ══ -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <button id="modal-close" class="modal-close">&#10005;</button>
+      <h3> ملخص الطلب</h3>
+
+      <table class="sum-table">
+        <thead>
+          <tr>
+            <th>الرمز</th>
+            <th>الوجبة</th>
+            <th>السعر</th>
+          </tr>
+        </thead>
+        <tbody id="sum-rows"></tbody>
+      </table>
+
+      <div class="totals">
+        <div class="totals-row"><span class="lbl">المجموع الإجمالي:</span><span class="val" id="sum-total">—</span>
+        </div>
+        <div class="totals-row"><span class="lbl">مبلغ الضريبة (10%):</span><span class="val" id="sum-tax"
+            style="color:var(--red);">—</span></div>
+        <div class="totals-row final"><span class="lbl">المبلغ الصافي بعد حسم الضريبة:</span><span class="val"
+            id="sum-net">—</span></div>
+      </div>
+
+      <div style="text-align:center;margin-top:28px;">
+        <button class="btn btn-red" onclick="$('#modal-overlay').removeClass('show')">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-brand"> Grab <em>&</em> Go</div>
+    <p>© 2026 جميع الحقوق محفوظة &nbsp;·&nbsp; IWB201 Web Application Design</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="myFunctions.js"></script>
+</body>
+
+</html>
